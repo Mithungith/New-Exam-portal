@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding:0;
+}
+.main-section{
+    display: flex;
+}
+
+.question-section{
+   width: 65%;
+   height: 100vh;
+   background-color: rgba(240, 204, 186, 0.5);
+}
+.qNumber-section{
+   width: 35%;
+   height: 100vh;
+   background-color: rgba(199, 139, 241, 0.4);
+}
+.qNumber-section .forTime{
+    background-color: aqua;
+    margin: 10px;
+    height: 20%;
+    
+}
+.qNumber-section .for-Qno{
+    background-color: aquamarine;
+    height: 75%;
+    margin:10px;
+}
+
+.question-section .question{
+    background-color:chartreuse;
+    margin: 10px;
+    height: 35%;
+    border-radius: 10px;
+}
+
+.question-section .options {
+    margin: 10px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.question-section .options button{
+    padding: 15px 100px;
+    margin: 5px auto ;
+    border-radius: 5px;
+    font-size: large;
+    border: 1px solid rgb(124, 162, 233);
+}
+
+/* .question-section .options button:hover{
+    background-color:rgba(76, 211, 235, 0.5);} */
+    /* box-shadow: 5px 5px #888888; */
+
+
+.important-btn{
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 30px 10px;
+
+}
+.important-btn button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    margin: 0 62px;
+    font-size: larger;
+    border: 1px solid rgb(124, 162, 233);
+    /* transition: linear; */
+    
+}
+
+/* .important-btn button:hover{
+    background-color: darkorange;
+} */
+button{
+    box-shadow: 0 5px lightgray;
+    cursor: pointer;
+}
+button:active{
+    transform: translatey(2px);
+    box-shadow: 0 2px darkgrey;
+}
+
+/* question No section */
+.for-Qno{
+    display: grid;
+    grid-template-columns: repeat(4,24.6%);
+    grid-gap:2px
+}
+.for-Qno button{
+    font-size: larger;
+    margin:7px;
+    border-radius: 10px;
+    border: 1px solid rgb(124, 162, 233);
+}
+button:hover{
+   background-color: rgb(182, 178, 178);
+   
+}
